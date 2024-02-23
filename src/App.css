@@ -1,0 +1,139 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li a {
+  display: flex;
+  text-decoration: none;
+  color: #17a099;
+  padding: 12px;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+li a:hover {
+  color: #f2f2f2;
+  background-color: #17a099;
+  border-radius: 0;
+}
+
+input[type="text"] {
+  border: 10 solid rgb(0, 162, 255);
+}
+
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 10px;
+}
+
+.movie-card {
+  padding: 10px;
+  background-color: rgb(31, 31, 31);
+  color: aliceblue;
+  margin: 5px;
+  border-radius: 2%;
+  width: 300px;
+}
+
+.movie-card img {
+  width: 280px;
+}
+
+.movie-card a:hover {
+  color: #17a099;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.movie-card img:hover {
+  color: #17a099;
+  background-color: #17a099;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.movie-card a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+img {
+  padding: 10px;
+}
+
+form button {
+  background-color: #17a099;
+  border: 2px solid #17a099;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+form button:hover {
+  background-color: transparent;
+  border: 2px solid #17a099;
+  color: #17a099;
+}
+
+.movie-info {
+  text-align: center;
+  margin: 30px;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.movie-info img {
+  width: 350px;
+  height: 450px;
+  border-radius: 10px;
+}
+.nomeFilme {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#inputSearch {
+  border: 2px solid #17a099;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+#inputSearch:hover {
+  border: 2px solid #17a099;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 500px) {
+  .movie-info img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .nomeFilme {
+    font-size: 30px;
+  }
+
+  #inputSearch {
+    border: 2px solid #17a099;
+    border-radius: 3px;
+    padding: 5px;
+    width: 200px;
+  }
+}
